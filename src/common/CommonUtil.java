@@ -49,7 +49,7 @@ public class CommonUtil {
 		String dir = System.getProperty("user.dir");
 		File file = new File(dir, fileName);
 		if(file.exists() == false) {
-			try{
+			try {
 				if(file.createNewFile() == true) {
 					FileWriter filewriter = new FileWriter(file);
 					filewriter.write(txt);
@@ -57,7 +57,7 @@ public class CommonUtil {
 				} else {
 					log.info("ファイル作成に失敗");
 				}
-			}catch(IOException e){
+			} catch (IOException e) {
 				log.error(e.toString());
 				log.info("ファイル出力に失敗" + e);
 			}

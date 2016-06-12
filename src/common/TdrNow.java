@@ -89,6 +89,7 @@ public class TdrNow {
 	 *  */
 	private static void atrStatus(Map<String, String> cookies) {
 
+		/* ファイル名の重複防止 */
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmm");
 		String strDate = sdf.format(cal.getTime());
